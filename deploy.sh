@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 V=$1
-REPO="thelimeburner"
+REPO=""
 PRE=veea
 IMAGE_NAME=terminal_card
 

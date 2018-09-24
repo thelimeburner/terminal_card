@@ -102,7 +102,7 @@ func handleCMD(cm ccc.CardMessage) payload {
 	for i, v := range argInterface {
 		args[i] = fmt.Sprint(v)
 	}
-	if args[len(args)-1] == "" {
+	if len(args) > 1 && args[len(args)-1] == "" {
 		args = args[:len(args)-1]
 	}
 	fmt.Println("args: ", args)
